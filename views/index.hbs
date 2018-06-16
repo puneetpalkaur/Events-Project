@@ -1,0 +1,211 @@
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo_font" href="#myPage" style="color: #dc0442 !important;
+            font-weight: 900;font-size: 26px">
+
+                MusicFest
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#myPage">HOME</a></li>
+                <li><a href="#fest">MUSICFEST 2018</A></LI>
+                <LI><A HREF="#artist">ARTISTS</A></LI>
+                <LI><A HREF="#contact">CONTACT</A></LI>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="" id="myPage" style="position: relative">
+
+
+        <img src="images/3.jpg" alt="fest" width="100%" height="auto">
+        <div class="carousel-caption">
+
+
+           <button class="btn buy" id="submit-btn" style="background: #dc0442;color: #212121;">BUY TICKETS</button>
+
+        </div>
+</div>
+
+
+<div id="fest" class="container text-center">
+    <h3>THE MusicFest 2018</h3>
+    <p><em>The biggest music fest of 2018 is here!</em></p>
+    <p>MusicFest is an annual music and arts festival.MusicFest showcases popular and established musical artists,
+        as well as emerging artists and reunited groups. MusicFest is one of the largest, most famous,
+        and most profitable music festivals in the United States and all over the world.</p>
+    <br>
+    <div class="row" id="artist">
+
+        <div class="col-sm-4">
+            <p class="text-center"><strong>Pharrell Williams</strong></p><br>
+            <a href="#demo2" data-toggle="collapse">
+                <img src="images/ph.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo2" class="collapse">
+                <p>American rapper, singer, songwriter and record producer.</p>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <p class="text-center"><strong>Eminem</strong></p><br>
+            <a href="#demo3" data-toggle="collapse">
+                <img src="images/e.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo3" class="collapse">
+                <p>American rapper, songwriter, record producer, record executive, and actor</p>
+
+            </div>
+        </div>
+         <div class="col-sm-4">
+            <p class="text-center"><strong>Rihanna</strong></p><br>
+            <a href="#demo" data-toggle="collapse">
+                <img src="images/r.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo" class="collapse">
+                <p>Barbadian singer, songwriter, actress, and businesswoman</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+                            <input type="number" class="form-control" id="psw" placeholder="How many?">
+                        </div>
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                        </div>
+                        <button type="submit" class="btn btn-block">Pay
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                    <p>Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+    <h3 class="text-center">Contact</h3>
+    <p class="text-center"><em>We love feedback!</em></p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <p>Drop a note.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Los Angeles, US</p>
+            <p><span class="glyphicon glyphicon-phone"></span>+213-213-2132</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>puneetpalkaur.001@gmail.com</p>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+            <br>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <button class="btn pull-right" style="background:#dc0442"type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+</div>
+
+
+<div id="googleMap"></div>
+<script>
+    function myMap() {
+        var myCenter = new google.maps.LatLng(34.0522, -118.2437);
+        var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker = new google.maps.Marker({position:myCenter});
+        marker.setMap(map);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR2IAkTDMIFlo0TZgszObASNsF8B1n8NI&callback=myMap"></script>
+
+
+<!-- Footer -->
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP" style="text-decoration:none;color:#dc0442 !important">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+        <div>Go To Top</div>
+    </a><br><br>
+</footer>
+
+<script>
+    $(document).ready(function(){
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    })
+
+
+
+     var button = document.querySelector('#submit-btn');
+      button.addEventListener('click', function () {
+
+        window.location.href="/payment";
+      });
+
+    </script>
